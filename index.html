@@ -23,9 +23,77 @@
       Frontend Mentor | Huddle landing page with single introductory section
     </title>
   </head>
-  <body>
-    Build The Community Your Fans Will Love Huddle re-imagines the way we build
-    communities. You have a voice, but so does your audience. Create connections
-    with your users as you engage in genuine discussion. Register
+  <body class="bg-violet">
+    <div class="absolute left-0 top-0 -z-10">
+      <picture>
+        <source media="(min-width: 1024px)" srcset="./images/bg-desktop.svg" />
+        <img src="./images/bg-mobile.svg" alt="background" class="w-full" />
+      </picture>
+    </div>
+    <!-- background -->
+
+    <!-- main content -->
+    <div class="m-10 min-w-[304px] max-w-[1280px] xl:mx-auto xl:mt-16">
+      <!-- container -->
+
+      <!-- logo -->
+      <h1 class="mb-[70px] max-w-[120px] lg:max-w-[200px]">
+        <img src="./images/logo.svg" alt="logo" />
+      </h1>
+
+      <!-- content -->
+      <div
+        class="mb-16 flex flex-col items-center gap-[60px] lg:flex-row lg:items-start"
+      >
+        <!-- hero -->
+        <div class="max-w-[696px]">
+          <img
+            src="./images/illustration-mockups.svg"
+            alt="illustration"
+            class="w-full"
+          />
+        </div>
+
+        <!-- content -->
+        <div class="max-w-[520px] text-center text-white lg:pt-8 lg:text-left">
+          <h2
+            class="mb-4 font-poppins text-2xl font-semibold leading-9 lg:mb-6 lg:text-[40px] lg:leading-[60px]"
+          >
+            Build The Community Your Fans Will Love
+          </h2>
+          <p class="mb-6 font-open-sans leading-6 lg:text-lg lg:leading-[27px]">
+            Huddle re-imagines the way we build communities. You have a voice,
+            but so does your audience. Create connections with your users as you
+            engage in genuine discussion.
+          </p>
+          <button
+            class="w-[200px] rounded-[20px] bg-white py-3 font-poppins text-xs leading-[18px] text-violet shadow-button transition-colors hover:bg-soft-magenta hover:text-white lg:rounded-[28px] lg:py-4 lg:text-lg lg:leading-[27px]"
+          >
+            Register
+          </button>
+        </div>
+      </div>
+
+      <!-- socials -->
+      <div
+        class="flex items-center justify-center gap-[10.86px] text-white lg:justify-end lg:gap-4"
+      >
+        <span
+          class="flex size-7 cursor-pointer items-center justify-center rounded-full border-[1px] border-white text-sm transition-colors hover:border-soft-magenta hover:text-soft-magenta lg:size-10 lg:text-lg"
+        >
+          <i class="fa-brands fa-facebook-f"></i>
+        </span>
+        <span
+          class="flex size-7 cursor-pointer items-center justify-center rounded-full border-[1px] border-white transition-colors hover:border-soft-magenta hover:text-soft-magenta lg:size-10 lg:text-lg"
+        >
+          <i class="fa-brands fa-twitter"></i>
+        </span>
+        <span
+          class="flex size-7 cursor-pointer items-center justify-center rounded-full border-[1px] border-white transition-colors hover:border-soft-magenta hover:text-soft-magenta lg:size-10 lg:text-xl"
+        >
+          <i class="fa-brands fa-instagram"></i>
+        </span>
+      </div>
+    </div>
   </body>
 </html>
